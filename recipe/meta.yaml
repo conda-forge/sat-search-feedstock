@@ -15,7 +15,7 @@ build:
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
-    - sat-search=satsearch.main:cli
+    - sat-search=satsearch.cli:cli
 
 requirements:
   host:
