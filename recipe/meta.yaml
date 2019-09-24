@@ -21,11 +21,11 @@ requirements:
   host:
     - python
     - pip
-    - sat-stac >=0.1.2,<0.2
+    - sat-stac >=0.3.0,<0.4
     - pytest-runner
   run:
     - python
-    - sat-stac >=0.1.2,<0.2
+    - sat-stac >=0.3.0,<0.4
 
 test:
   imports:
