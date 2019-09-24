@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: sat-search
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sat-search/sat-search-{{ version }}.tar.gz
-  sha256: 962441dd71c640363bb437fb61b9f9f14b2a68219500719df73266ac065a5e70
+  sha256: 63d8bdbf2017698a8f3aefa0541117b528cedb8284077abccdcb018cf5902db2
   patches:
     - req.patch
 
