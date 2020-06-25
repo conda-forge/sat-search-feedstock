@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - sat-search=satsearch.cli:cli
 
@@ -30,11 +30,11 @@ requirements:
 test:
   imports:
     - satsearch
-    - test
   commands:
+    - pip check
     - sat-search --help
   requires:
-    - pytest
+    - pip
 
 about:
   home: https://github.com/sat-utils/sat-search
