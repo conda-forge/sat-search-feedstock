@@ -7,8 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/s/sat-search/sat-search-{{ version }}.tar.gz
   sha256: bf59e96ae679bcddf4897a32d6f0e727a7b9a1b7443153681ee05fdecafc0245
-  patches:
-    - req.patch
 
 build:
   number: 0
@@ -19,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
-    - sat-stac >=0.3.0,<0.4
+    - sat-stac >=0.4.0,<0.5
     - pytest-runner
   run:
-    - python
-    - sat-stac >=0.3.0,<0.4
+    - python >=3
+    - sat-stac >=0.4.0,<0.5
 
 test:
   imports:
