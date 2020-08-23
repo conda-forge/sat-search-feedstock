@@ -5,7 +5,7 @@ Home: https://github.com/sat-utils/sat-search
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A python client for sat-api
 
