@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/sat-search/sat-search-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/sat-search/sat-search-{{ version }}.tar.gz
   sha256: bf59e96ae679bcddf4897a32d6f0e727a7b9a1b7443153681ee05fdecafc0245
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
     - pip
     - sat-stac >=0.4.0,<0.5
     - pytest-runner
   run:
-    - python >=3
+    - python >={{ python_min }}
     - sat-stac >=0.4.0,<0.5
 
 test:
@@ -33,6 +33,7 @@ test:
     - sat-search --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/sat-utils/sat-search
