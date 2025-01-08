@@ -30,7 +30,8 @@ test:
   imports:
     - satsearch
   commands:
-    - pip check
+    # Cannot do pip-check b/c of sat-stac bad dep on python-dateutil
+    # - pip check
     - sat-search --help
   requires:
     - pip
